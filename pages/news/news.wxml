@@ -1,0 +1,5 @@
+<import src="../wxParse/wxParse.wxml"/>
+<view class="mainbody">
+    <template is="wxParse" data="{{wxParseData:newsContent.nodes}}"/>
+    <view class="end">结束</view>
+</view>

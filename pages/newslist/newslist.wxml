@@ -1,0 +1,33 @@
+<view class="body">
+<view  class="nav-bar">
+    <view bindtap="browsing" id="war" style="color: {{color.war}}">军事</view>
+    <view bindtap="browsing" id="sport" style="color: {{color.sport}}">体育</view>
+    <view bindtap="browsing" id="tech" style="color: {{color.tech}}">科技</view>
+    <view bindtap="browsing" id="edu" style="color: {{color.edu}}">教育</view>
+    <view bindtap="browsing" id="ent" style="color: {{color.ent}}">娱乐</view>
+    <view bindtap="browsing" id="money" style="color: {{color.money}}">财经</view>
+    <view bindtap="browsing" id="gupiao" style="color: {{color.gupiao}}">股票</view>
+    <view bindtap="browsing" id="travel" style="color: {{color.travel}}">旅游</view>
+</view>
+<view class="load" hidden="{{hidden}}">加载中...</view>
+<scroll-view scroll-y="true" bindscrolltolower="loadmore" bindscrolltoupper="loadmore" class="news-container" style="height:{{scrollHeight}}px;">
+    <block wx:for="{{newslist}}" wx:for-item="newsItem">
+        <navigator url="../news/news?newsid={{newsItem.id}}">
+            <view class="news-item">
+                <view class="text-img">
+                    <view class="text">
+                       <text>{{newsItem.title}}</text>
+                    </view>
+                    <view class="img">
+                        <image src="{{newsItem.imgurl}}" mode="aspectFill"></image>
+                    </view>
+                </view>
+                <view class="news-footer">
+                    <text>{{newsItem.time}}</text>
+                </view>
+            </view>
+        </navigator>
+    </block>
+</scroll-view>
+<view class="load" hidden="{{hidden}}">加载中...</view>
+</view>

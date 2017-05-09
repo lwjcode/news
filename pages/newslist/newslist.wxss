@@ -1,0 +1,85 @@
+.body{
+    font-size:16px;
+    font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,"Microsoft YaHei","微软雅黑",sans-serif,"Segoe UI Emoji","Segoe UI Symbol"; 
+    color:black;
+    position: relative;
+}
+
+.nav-bar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px solid #E7F0D2;
+    color:#BDC6B8;
+    font-size: 0.95em;
+    height:30px;
+    align-items: center;
+    width:100%;
+    z-index:2;
+
+}
+
+.nav-bar view{
+    width:16%;
+    margin:0 1%;
+    text-align: center;
+}
+
+.news-container{
+    margin:2%;
+    box-sizing: border-box;
+    width:96%;
+    position: relative;
+    top:40px;
+}
+
+.news-item{
+    line-height: 30px;
+    border-bottom:1px solid #E7F0D2;
+    height:130px;
+    box-sizing: border-box;
+}
+
+.text-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:100px;
+    width: 100%;
+    box-sizing: border-box;
+    padding:5px 0;
+}
+
+.text{
+    width:60%;
+    box-sizing: border-box;
+    padding-right:2%;
+}
+
+.img{
+    width:40%;
+    box-sizing: border-box;
+    padding-left:2%;
+}
+
+.img image{
+   width:100%;
+   height:100%;
+}
+
+.news-footer{
+    font-size:0.7rem;
+    color:#BDC6B8;
+}
+
+.load{
+    text-align: center;
+    margin-top:10px;
+    box-shadow: 0 0 10px #ccc;
+    height:30px;
+    position: relative;
+    top:40px;
+}
+
+
+

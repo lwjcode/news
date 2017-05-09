@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/newslist/newslist",
+    "pages/news/news",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "小静新闻",
+    "navigationBarTextStyle":"#fff"
+  }
+}
